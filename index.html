@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slapjack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="opponents-face">🙂</div>
+    <div class="board-table">
+        <div id="opponent" class="cards opponent-side"></div>
+        <div class="cards-left opponent-cards">0</div>
+        <div class="cards discard-pile">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+        </div>
+        <div class="cards-left player-cards">0</div>
+        <div id="player" class="cards player-side"></div>
+    </div>
+    <div class="reload">
+        <button onclick="location.reload()">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

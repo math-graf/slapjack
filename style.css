@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+.opponents-face {
+    text-align: center;
+    font-size: 60px;
+    cursor: default;
+}
+
+.reload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.reload button {
+    color: white;
+    padding: 1vh 2vw;
+    background-color: teal;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 200ms;
+}
+
+.reload button:hover {
+    background-color: rgb(0, 87, 87);
+}
+
+.board-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh auto;
+    width: 350px;
+    height: 70vh;
+    border: 10px solid rgb(15, 15, 15);
+    box-shadow: 6px 8px 10px 2px black;
+    border-radius: 8px;
+    background: rgb(46, 116, 46);
+}
+
+.board-table .cards {
+    margin: 15px;
+    border-radius: 3px;
+    width: 75px;
+    height: 16vh;
+    background: radial-gradient(rgb(76, 76, 192), black);
+    
+}
+
+.board-table .opponent-side {
+    margin-left: 35px;
+    align-self: flex-start;
+}
+
+.board-table .player-side {
+    margin-right: 35px;
+    align-self: flex-end;
+}
+
+.board-table .cards-left {
+    color: white;
+    font-size: 3vh;
+}
+
+.board-table .opponent-cards {
+    margin-left: 65px;
+    align-self: flex-start;
+}
+
+.board-table .player-cards {
+    margin-right: 65px;
+    align-self: flex-end;
+}
+
+.board-table .discard-pile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(27, 27, 27);
+    background: white;
+    visibility: hidden;
+}
+
+.board-table .discard-pile .red {
+    color: red;
+}
+
+.board-table .discard-pile .top {
+    position: absolute;
+    top: 0;
+    left: 0.4vh;
+    margin: 2px;
+    align-self: flex-start;
+}
+
+.board-table .discard-pile .middle {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    width: 45%;
+}
+
+.board-table .discard-pile .middle > * {
+    flex: 50%;
+    text-align: center;
+}
+
+.board-table .discard-pile .bottom {
+    position: absolute;
+    right: 0.4vw;
+    bottom: 0;
+    transform: rotate(180deg);
+    align-self: flex-end;
+    margin: 2px;
+}
